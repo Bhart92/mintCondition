@@ -179,13 +179,21 @@ justify-self: flex-end;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  transition: .35s ease-in-out;
+  background: #FFF;
 }
 .artistCard:nth-of-type(even){
   align-self: flex-end;
 }
+.artistCard:hover .cardImage{
+  transform: scale(.99);
+  cursor: pointer;
+}
 .cardImage{
   height: 100%;
   width: 100%;
+  transition: .35s ease-in-out;
+
 }
 .cardHeader{
   height: 25%;
@@ -217,6 +225,7 @@ flex-direction: row;
 #piercingImage{
   width: 50%;
   height: 100%;
+  transition: .35s ease-in-out;
 }
 #piercingArtistContainer{
   width: 50%;
