@@ -351,8 +351,11 @@ footer #bottomContainer p:last-of-type{
       align-items: flex-start;
       justify-content: space-between;
   }
-  #artistContainer, #piercingContainer {
+  #artistContainer {
     height: 65%;
+  }
+  #piercingContainer{
+height: 75%;
   }
   #piercingSection {
       justify-content: space-around;
@@ -426,7 +429,7 @@ footer #bottomContainer p:last-of-type{
       flex-direction: column;
       align-self: center;
       margin: 20px 0;
-  }
+    }
     .sectionHeader h1 {
       padding: 60px 0 0 0;
       font-size: 1.85rem;
@@ -484,7 +487,7 @@ footer #bottomContainer p:last-of-type{
     width: 90%;
     text-align: center;
     margin: 0 auto;
-  }
+    }
   }
 @media only screen and (max-width: 600px) and (min-height: 800px){
 
