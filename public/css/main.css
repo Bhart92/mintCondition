@@ -336,21 +336,40 @@ footer #bottomContainer p:last-of-type{
 @media only screen and (min-width: 1400px){
 
 }
-@media only screen and (max-width: 1200px) and (min-height: 800px){
-#artistContainer, #piercingContainer {
-    height: 50%;
-    width: 85%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-}
 @media only screen and (width: 1024px) and (height: 1366px){
 
 }
 @media only screen and (max-width: 768px) and (min-height: 1024px){
 
+}
+@media only screen and (min-width: 1280px) and (min-height: 850px){
+  #artistContainer, #piercingContainer {
+      height: 50%;
+      width: 85%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+  #artistContainer, #piercingContainer {
+    height: 65%;
+  }
+  #piercingSection {
+      justify-content: space-around;
+      flex-direction: column;
+  }
+  .sectionHeader {
+      margin-bottom: 0;
+  }
+  #landingSection {
+      transform: skewY(-9deg);
+  }
+  #heroBox {
+      transform: skewY(9deg);
+    }
+    hr {
+    margin: 7rem 0 0 0;
+  }
 }
 @media only screen and (max-width: 600px){
   #navUl {
