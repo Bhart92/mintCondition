@@ -102,7 +102,7 @@ nav{
   height: 100vh;
   width: 100%;
   background: #FFF;
-  background: linear-gradient(rgba(0, 0, 0, .5), #000), url('../img/landingBack.jpg');
+  background: linear-gradient(rgba(0, 0, 0, .15), #000), url('../img/landingBack.jpg');
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
@@ -353,27 +353,30 @@ footer #bottomContainer p:last-of-type{
 
 }
 @media only screen and (max-width: 600px){
-  .hamburger{
-    display: block;
+  #navUl {
+    display: none;
   }
+  .hamburger{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
   #navContainer {
     width: 100%;
   }
   #navLogo {
-      margin-top: 5px;
-      margin-left: 5px;
-      width: 75%;
-      position: relative;
-      z-index: 1000;
-  }
-  #navLogo img {
-    width: 60%;
+  display: none;
   }
   .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
     background-color: #FFF;
   }
+  #landingSection {
+    transform: skewY(-16deg);
+}
   #heroBox {
     width: 90%;
+    transform: skewY(16deg);
   }
   #heroBox h1 {
     font-size: 1.65rem;
@@ -406,17 +409,27 @@ footer #bottomContainer p:last-of-type{
       margin: 20px 0;
   }
     .sectionHeader h1 {
-      padding: 40px 0 0 0;
+      padding: 60px 0 0 0;
+      font-size: 1.85rem;
     }
+    hr{
+      margin-top: 4rem;
+    }
+    .sectionHeader {
+    margin-bottom: 4rem;
+  }
     #piercingContainer {
         height: 100%;
         flex-direction: column;
         width: 90%;
     }
+    #piercingSection .sectionHeader h1{
+      font-size: 1.7rem;
+    }
     #piercingContainer {
       height: 100%;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   #piercingImage {
     width: 100%;
@@ -448,6 +461,11 @@ footer #bottomContainer p:last-of-type{
   footer #bottomContainer p{
     font-size: .59rem;
     }
+    #contactHeroBox a:last-of-type {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
   }
 @media only screen and (max-width: 600px) and (min-height: 800px){
 
